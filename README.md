@@ -5,7 +5,7 @@
  python -m flask run
  use postman or curl to test service.
  
- Ex:
+ ﻿### Ex request:
  curl --location --request POST 'http://127.0.0.1:5000/create-routes-service' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -213,5 +213,10 @@
         ]
     ]
 }'
+ ﻿### Ex response:
+  
+  {"total_delivery_duration": 4815, "routes": {"1": {"jobs": [9, 3, 4], "delivery_duration": 2219}, "2": {"jobs": [],
+"delivery_duration": 0}, "3": {"jobs": [6, 7, 8, 5], "delivery_duration": 2596}}}
+  
  ## Run script
  python create_routes.py
