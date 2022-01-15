@@ -3,7 +3,7 @@
 ﻿## Run http post service
  
  python -m flask run
- 
+ use postman or curl to test serviceç
  Ex:
  curl --location --request POST 'http://127.0.0.1:5000/create-routes-service' \
 --header 'Content-Type: application/json' \
